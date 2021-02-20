@@ -1,0 +1,47 @@
+@mixin flexLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centering($topValue) {
+    position: absolute;
+    top: $topValue;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin textStyles($transform: uppercase) {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: $transform;
+}
+
+@mixin response($breakpoint) {
+    @if($breakpoint == xl) {
+        @media(max-width: 1200px) {
+            @content;
+        }
+    }
+    @if($breakpoint == lg) {
+        @media(max-width: 1000px) {
+            @content;
+        }
+    }
+    @if($breakpoint == md) {
+        @media(max-width: 760px) {
+            @content;
+        }
+    }
+    @if($breakpoint == sm) {
+        @media(max-width: 560px) {
+            @content;
+        }
+    }
+}
+
+@mixin flexPosition($justCont: center, $alignIte: center) {
+    display: flex;
+    justify-content: $justCont;
+    align-items: $alignIte;
+}

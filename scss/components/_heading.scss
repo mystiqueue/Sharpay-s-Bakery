@@ -1,0 +1,73 @@
+.main-name {
+    font-family: fontFamily(fontPopins);
+    font-size: size(xl);
+    color: color(secondary);
+    @include textStyles;
+
+    @media(max-width: 1000px) {
+        font-size: 40px;
+    }
+   
+    @media(max-width: 500px) {
+        font-size: 20px;
+        text-align: center;
+        
+      }
+
+}
+
+.sub-name {
+    font-family: fontFamily(fontLato);
+    font-size: size(sm) - 0.8rem;
+    color: color(quaternary);
+    text-align: center;
+    @include textStyles;
+
+    @media(max-width: 500px) {
+        font-size: 12px;
+        text-align: center;
+        
+      }
+
+}
+
+.main-heading {
+    font-family: fontFamily(fontPopins);
+    font-size: size(sm) + .5rem;
+    font-weight: 300;
+    color: darken(color(tertiary), 10%);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+
+    @media(max-width: 1600px) {
+        font-size: 80px;
+    }
+
+    @media(max-width: 1000px) {
+        font-size: 60px;
+    }
+
+    @media(max-width: 500px) {
+        font-size: 40px;
+        margin-bottom: 20px;
+              
+      }
+
+
+}
+
+.sub-heading {
+    font-family: fontFamily(fontLato);
+    font-size: size(sm) - 0.8rem;
+    color: color(quaternary);
+    text-align: center; 
+    margin-bottom: 1rem;
+    @include textStyles;
+
+    @media(max-width: 500px) {
+        font-size: 12px;
+        text-align: center;
+        
+      }
+
+}

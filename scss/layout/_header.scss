@@ -1,0 +1,30 @@
+.header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgba(color(livelesseternity), 3), rgba(color(livelesseternity), .5)), url(/images/header.jpg) center no-repeat;
+    background-size: cover;
+ 
+
+    .brand {
+        @include centering(15%);
+        display: flex;
+        align-items: center;
+
+        // @media(max-width: 500px) {
+        //    @include centering(12%);
+        //    height: 50vh;
+            
+        //   }
+    
+    }
+
+
+    &-banner {
+        text-align: center;
+        width: 35%;
+        bottom: 60%;
+  
+        @include centering(50%);
+    }
+}

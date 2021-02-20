@@ -1,0 +1,42 @@
+
+
+$fonts: (
+    fontPopins: 'Poppins', 
+    fontLato: 'Lato',
+);
+
+@function fontFamily($font) {
+    @return map-get($fonts, $font)
+}
+
+
+$font-sizes: (
+    xl: 3rem,
+    lg: 2.5rem,
+    md: 2rem,
+    sm: 1.8rem,
+    xs: 1.6rem
+);
+
+@function size($size) {
+    @return map-get($font-sizes, $size)
+}
+
+
+
+
+
+$colors: (
+    primary: #333,
+    secondary: #ffe,
+    tertiary: #f2f0f1,
+    quaternary: #ffddd2,
+    lovelyPink: #f4acb7,
+    livelesseternity: #565757
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+
